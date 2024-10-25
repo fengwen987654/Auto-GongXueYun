@@ -1,6 +1,6 @@
 [
   {
-    "remark": "用户1",
+    "remark": "用户1111111111111",
     "phone": "手机号",
     "password": "密码",
     "province": "xx省",
@@ -15,7 +15,7 @@
     "pushKey": "Key设置为相同的会推送到一个微信去，如果不相同则各自推送"
   },
   {
-    "remark": "用户2",
+    "remark": "用户222222222222",
     "phone": "手机号",
     "password": "密码",
     "province": "xx省",
