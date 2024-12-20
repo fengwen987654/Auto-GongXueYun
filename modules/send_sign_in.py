@@ -12,14 +12,14 @@ from modules.load_config import dprint
 shanghai_tz = timezone(timedelta(hours=8))
 gmt_time = datetime.now(shanghai_tz)
 now = datetime.now(shanghai_tz)
-# 以中午12时为分界线, 判断打卡是上班还是下班
-is_start = now.hour < 12
+# 以17时为分界线, 判断打卡是上班还是下班
+is_start = now.hour < 17
 # 中文映射字典, 用于控制台输出罢了
 sign_type_mapping = {"START": "上班", "END": "下班"}
 # 收集所有线程签到结果
 global_sign_results = []
 # 覆盖打卡，设置为True会导致每次运行都不检查签到历史从而重复签到，用于测试环境调试
-RepeatCheckIn = False
+RepeatCheckIn = True
 
 
 # 处理单个用户的签到流程, 包括获取登录令牌、签到计划 ID、检查是否已签到以及执行签到操作。

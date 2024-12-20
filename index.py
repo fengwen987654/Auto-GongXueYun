@@ -1,7 +1,7 @@
 from modules.load_config import load_config, dprint
 from modules.send_sign_in_threading import send_sign_in_threading
 
-# ❗敏感信息输出开关, 例如用户名和手机号还有部分接口响应内容, 部署时一定要关掉
+# ❗部署时确保这里是False，敏感信息输出开关, 例如用户名和手机号还有部分接口响应内容。
 dprint.DEBUG = False
 
 
